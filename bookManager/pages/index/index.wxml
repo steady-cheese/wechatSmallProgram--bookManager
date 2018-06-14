@@ -1,0 +1,51 @@
+<swiper interval='3000' duration='500' circular='true' indicator-dots='true' autoplay='true'>
+  <swiper-item wx:for='{{arrSwiper}}' wx:key="1">
+    <navigator url='{{item.url}}'>
+      <image src='{{item.src}}'></image>
+    </navigator>
+  </swiper-item>
+</swiper>
+
+<form bindsubmit='search'>
+  <picker name='key' bindchange='pickerChange' value='{{index}}' range='{{arrPicker}}'>
+    选择查询类别：{{arrPicker[index]}}
+  </picker>
+  <view class='ss'>
+  <input name='value'></input>
+  <button form-type='submit'><image src='/images/search_button.png'></image></button>
+  </view>
+</form>
+<view class="book-content">
+  <view wx:for="{{arrSearchBooks}}" wx:key="1">
+    <view class="book-list" bindtap='tips' data-num='{{item[3]}}'>
+      <view class="book-image">
+        <image src="/images/1.jpg" mode="aspectFit"></image>
+      </view>
+      <view class="book-info">
+        <view class="book-info-style">
+          <view>书名:  {{item[0]}}</view>
+          <view>作者:  {{item[1]}}</view>
+          <view>出版商:    {{item[2]}}</view>
+          <view>可借数量:  {{item[3]}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="line"></view>
+  </view>
+</view>
+
+<!-- <view class='newbooks center'>
+  <text class='title'>最新图书</text>
+  <view class='table'>
+    <view class='tr'>
+      <view class='td'>编号</view>
+      <view class='td'>名称</view>
+      <view class='td'>分类</view>
+    </view>
+    <view class='tr' wx:for='{{newBooks}}' wx:key="2">
+      <view class='td'>{{item.id}}</view>
+      <view class='td'>{{item.name}}</view>
+      <view class='td'>{{item.class}}</view>
+    </view>
+  </view>
+</view>   -->

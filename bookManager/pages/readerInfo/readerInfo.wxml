@@ -1,0 +1,19 @@
+<view class='all' range='{{temp}}'>
+  <!--个人信息-->
+  <view class='title'>基本信息</view>
+  <!--用户名、Id、学院、专业、电话、邮箱-->
+  <view class='middle'>
+    <text>用户名:    {{temp["name"]}}</text>
+    <text>借阅号:    {{temp["id"]}}</text>
+    <text>学院:   {{temp["department"]}}</text>
+    <text>专业:   {{temp["major"]}}</text>
+    <text>电话:   {{temp["phone"]}}</text>
+    <text>邮箱:   {{temp["email"]}}</text>
+  </view>
+  <!--借阅上限、借阅时间、已借数量-->
+  <view class='lower'>
+    <text>借阅上限:  {{temp["max"]}}</text>
+    <text>借阅时长:   {{temp["time"]}}</text>
+    <text>已借数量:   {{temp["lendednum"]}}</text>
+  </view>
+</view>

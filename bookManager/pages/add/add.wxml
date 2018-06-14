@@ -1,0 +1,71 @@
+<form bindsubmit='add'>
+  <view wx:if='{{op==1}}'>
+    <view>
+      <label>图书名称</label>
+      <input name='book_name'></input>
+    </view>
+    <view>
+      <label>作者</label>
+      <input name='author'></input>
+    </view>
+    <view>
+      <label>译者</label>
+      <input name='translator'></input>
+    </view>
+    <view>
+      <label>价格</label>
+      <input name='price'></input>
+    </view>
+    <view>
+      <label>ISBN</label>
+      <input name='ISBNCode'></input>
+    </view>
+    <view>
+      <label name='PublishCompany'>出版社</label>
+      <input></input>
+    </view>
+    <view>
+      <label>出版日期</label>
+      <input name='ComeUpTime'></input>
+    </view>
+    <view>
+      <label>入库者</label>
+      <input name='EnteringMen'></input>
+    </view>
+  </view>
+  <view wx:if='{{op==2}}'>
+    <view>
+      <label>借阅号</label>
+      <input name='user_id'></input>
+    </view>
+    <view>
+      <label>用户名</label>
+      <input name='user_name'></input>
+    </view>
+    <view>
+      <label>学院</label>
+      <input name='user_department'></input>
+    </view>
+    <view>
+      <label>专业</label>
+      <input name='user_major'></input>
+    </view>
+    <view>
+      <label>电话</label>
+      <input name='user_phone'></input>
+    </view>
+    <view>
+      <label>邮箱</label>
+      <input name='user_email'></input>
+    </view>
+    <view>
+      <label>借阅上限</label>
+      <input name='user_max'></input>
+    </view>
+    <view>
+      <label>借阅时间</label>
+      <input name='user_time'></input>
+    </view>
+  </view>
+  <button form-type='submit'>确认添加</button>
+</form>

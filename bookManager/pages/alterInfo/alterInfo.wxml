@@ -1,0 +1,55 @@
+<form bindsubmit='save_info'>
+  <view class="container" wx:if='{{flag==0}}'>
+    <view class="avatar">
+      <text>头像</text>
+      <view class="real">
+        <image class="n"></image>
+        <!--可以修改头像？bingtap-->
+        <image class="a" src="{{userInfoAvatar}}" />
+      </view>
+    </view>
+    <view class="nickName" bindtap='alter_password'>
+      <text>密码修改</text>
+      <view class="real">
+        <image src='/images/arrow.png'></image>
+      </view>
+    </view>
+    <view class="sex">
+    </view>
+    <view class="area" bindtap='alter_pe'>
+      <text>电话</text>
+      <view class="real">{{Info[5]}}</view>
+    </view>
+    <view class="signature">
+      <text>邮箱</text>
+      <view class="real">{{Info[6]}}</view>
+    </view>
+  </view>
+  <!--密码修改-->
+  <view class='alter_password' wx:elif='{{flag==1}}'>
+    <view>原密码：
+      <input name='password_p' type='password'></input>
+    </view>
+    <view>新密码：
+      <input name='password_n' type='password'></input>
+    </view>
+    <view>确认密码：
+      <input name='password_r' type='password'></input>
+    </view>
+    <view>
+      <button form-type='submit'>保存</button>
+    </view>
+  </view>
+  <!--电话邮箱修改-->
+  <view class='alter_pe' wx:else>
+    <view>电话：
+      <input name='phone'></input>
+    </view>
+    <view>邮箱：
+      <input name='email'></input>
+    </view>
+    <view>
+      <button form-type='submit'>保存</button>
+    </view>
+  </view>
+</form>

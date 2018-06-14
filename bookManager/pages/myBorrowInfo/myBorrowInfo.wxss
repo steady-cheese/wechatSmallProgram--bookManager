@@ -1,0 +1,14 @@
+
+.book-content .book-list{
+  display: flex;
+  flex-direction:row;
+  border-bottom: 2px solid bisque 
+}
+.book-content .book-list .book-image image{
+  width: 280rpx;
+  height: 360rpx;
+}
+.book-content .book-list .book-info{
+  margin-left:50rpx;
+  margin-top: 80rpx; 
+}

@@ -1,0 +1,29 @@
+<!--pages/mine/mine.wxml-->
+<!-- <text>pages/mine/mine.wxml</text> -->
+<view class='container center'>
+  <view class='form'>
+    <form bindsubmit='userLogin' data-id='{{isLogin}}'>
+      <picker name='op' bindchange='pickerChange' value='{{index}}' range='{{rolePicker}}'>
+        选择身份：{{rolePicker[index]}}
+      </picker>
+      <view>
+        <label>用户名：</label>
+        <input name="user"></input>
+        <!--name是表单提交信息-->
+      </view>
+      <view>
+        <label>密码：</label>
+        <input name="pwd" type='password'></input>
+      </view>
+      <!-- <view> -->
+      <button form-type='submit'>登录</button>
+      <!--form-type必须有，最上面的bindsubmit事件必须绑定-->
+      <!-- <button form-type='submit'>注册</button>
+      </view> -->
+    </form>
+  </view>
+  <!-- <view class='welcome' wx:else>
+    <text>欢迎您，{{return_info[1]}}</text>
+    <button bindtap='existLogin'>退出登录</button>
+  </view> -->
+</view>

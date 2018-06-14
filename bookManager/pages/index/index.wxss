@@ -1,0 +1,86 @@
+/* pages/index/index.wxss */
+
+.newBooks{
+  width: 700rpx;
+  margin: 0 auto;
+}
+
+.table{
+  border-left: 1rpx solid #333;
+  border-top: 1rpx solid #333;
+}
+
+.tr{
+  display: flex;
+  /* flex-direction:row */
+}
+
+.td{
+  border-right: 1rpx solid #333;
+  border-bottom: 1rpx solid #333;
+}
+
+.tr .td:first-child{
+  flex: 2;
+}
+
+.tr .td:nth-child(2){
+  flex: 5;
+}
+
+.tr .td:nth-child(3){
+  flex: 4;
+}
+
+picker{
+  margin-top: 20rpx;
+  margin-left: 60rpx
+}
+
+.ss{
+  display: flex;
+  flex: row;
+}
+.ss button image{
+  width: 100rpx;
+  height: 50rpx;
+}
+input{
+  border: 1rpx solid #333;
+  width: 460rpx;
+  height: 82rpx;
+  margin-top: 36rpx;
+  margin-left: 16rpx;
+}
+
+/*  */
+button{
+  width: 180rpx;
+  height: 82rpx;
+  margin-top: 40rpx;
+  font-size-adjust: 45rpx;
+  /* //没起作用 */
+    font-variant-position: center;
+}
+
+.book-content .book-list{
+  display: flex;
+  flex-direction: row
+}
+.book-content .book-list .book-image image{
+  width: 260rpx;
+  height: 330rpx;
+  margin-right: 30rpx;
+}
+.book-content .book-list .book-info{
+  font-size: 36rpx;
+  margin-top: 50rpx;
+}
+
+.book-content .book-list .book-info .book-info-style view{
+  height: 60rpx;
+}
+
+.book-content .book-list{
+  border-bottom: 2rpx solid;
+}

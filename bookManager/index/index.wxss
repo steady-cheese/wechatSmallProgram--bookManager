@@ -1,0 +1,60 @@
+
+ .header{
+  display: flex;
+  width: 100%;
+   height: 100rpx; 
+  background-color: #262F5A;
+}
+.login{
+		color: #FFF;
+    font-size: 40rpx;
+    position: absolute;
+    top: 40rpx;
+    right: 9.5%;
+	}
+  .logo{
+    width: 400rpx;
+    height: 100rpx; 
+	}
+  
+
+.banner{
+  top: 50rpx;
+  height:450rpx; 
+  margin:auto;position: relative;
+}
+.swiper{
+   height: 100%; 
+}
+.grey_one{
+  height: 150rpx;
+}
+.index-image{
+   width: 100%;
+   height: 90%;
+  
+}
+.grey_two{
+  width: 100%;
+	height: 80rpx; 
+  position: absolute; background-color: #E2E2E2;font-size: 15px; line-height: 35px;color: #985F90;font-weight: bold;
+   bottom: 0;
+}
+
+.search{
+  
+  height: 100rpx;
+	width: 800rpx;background-color: #FFF;border-radius: 20rpx;z-index: 100;
+}
+	.search_input{
+		width:70%;
+    height: 70rpx;
+    border: 10rpx solid #262F5A; font-size: 20px; position: absolute; background-color: #FFF;
+	}
+	.search_btn{
+    height: 85rpx;
+		width: 170rpx;background-color: #262F5A;color: #FFF; font-size: 20px;font-weight: bold; line-height: 60rpx;text-align: center;
+		 position: absolute; right: 10rpx;
+	}
+	
+

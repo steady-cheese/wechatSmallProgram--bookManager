@@ -1,0 +1,17 @@
+<view class="book-content">
+  <view wx:for="{{arrBorrowBooks}}" wx:key="1">
+    <view class="book-list">
+      <view class="book-image">
+        <image src="/images/1.jpg" mode="aspectFit"></image>
+      </view>
+      <view class="book-info">
+        <view class="book-info-style">
+          <view>借阅号:  {{item[0]}}</view>
+          <view>书名:  {{item[1]}}</view>
+          <view>应还时间:    {{item[3]}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="line"></view>
+  </view>
+</view>

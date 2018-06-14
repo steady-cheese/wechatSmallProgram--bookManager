@@ -1,0 +1,32 @@
+<!--pages/index/index.wxml-->
+<view class='header'>
+  <navigator class='login' style='display:inline;' url='/pages/login/login' open-type='switchTab' hover-class='nav-hover'>登录</navigator>
+</view>
+<view  class='logo'>
+  <image class='logo' src='/image/logo.png'></image>
+  </view>
+
+<view  class='banner'>
+  <swiper  autoplay="true" interval='5000' duration='500' circular='true' indicator-dots='{{true}}' class='swiper'>
+    <swiper-item  wx:for="{{imagelist}}">
+      <image  class='index-image' src="{{item.Path}}" ></image>
+
+    </swiper-item>
+  </swiper>
+</view>
+<view class='grey_one'></view>
+<view class='search'>
+		    <input class="search_input" type="text" placeholder='请输入图书名/编号' bindinput='inputclick'/>
+		     <button class="search_btn" bindtap='searchBtnClick' >搜索</button>
+</view>
+ <view>{{infomess}}</view>
+<view class="grey_two">
+     <swiper  autoplay="true" circular='true'  interval='550' duration='50' class='grey_two' >
+    <swiper-item  wx:for="{{testlist}}">
+     <text>{{item.text}}</text>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- <view class="footer">
+		<text>@Copyright重庆理工大学中山图书馆</text>
+</view> -->

@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/add/add",
+    "pages/booksInfo/booksInfo",
+    "pages/mine/mine",
+    "pages/reader/reader",
+    "pages/readerInfo/readerInfo",
+    "pages/alterInfo/alterInfo",   
+    "pages/myBorrowInfo/myBorrowInfo",     
+    "pages/searchResult/searchResult",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#262F5A",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "中山图书馆",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/index.png",
+      "selectedIconPath": "/images/index_focus.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "/images/index.png",
+      "selectedIconPath": "/images/index_focus.png"
+    }]
+  }
+}

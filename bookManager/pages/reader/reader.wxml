@@ -1,0 +1,44 @@
+<!--pages/reader/reader.wxml-->
+<!-- <text>pages/reader/reader.wxml</text> -->
+<view class='all'>
+  <!--用户名：接收当前用户-->
+  <view class='header'>{{userinfo[1]}}</view>
+  <!--基本资料，修改信息-->
+  <view class='content'>
+    <view>
+      <navigator url='/pages/readerInfo/readerInfo'>
+        <image src='/images/info.png'></image>
+        <text>基本信息</text>
+      </navigator>
+    </view>
+    <view>
+      <navigator url='/pages/alterInfo/alterInfo'>
+        <image src='/images/alter_info.png'></image>
+        <text>修改资料</text>
+      </navigator>
+    </view>
+
+    <view bindtap='seeBorrow' wx:if='{{op==0}}'>
+      <!-- <navigator url='/pages/myBorrowInfo/myBorrowInfo'> -->
+      <image src='/images/search_button1.png'></image>
+      <text>查询借阅</text>
+      <!-- </navigator> -->
+    </view>
+    <view bindtap='add' wx:if='{{op==1}}'>
+      <!-- <navigator url='/pages/myBorrowInfo/myBorrowInfo'> -->
+      <image src='/images/search_button1.png'></image>
+      <text>添加图书</text>
+      <!-- </navigator> -->
+    </view>
+    <view bindtap='add' wx:if='{{op==2}}'>
+      <!-- <navigator url='/pages/myBorrowInfo/myBorrowInfo'> -->
+      <image src='/images/search_button1.png'></image>
+      <text>录入新读者</text>
+      <!-- </navigator> -->
+    </view>
+  </view>
+  <!--退出-->
+  <view class='footer'>
+    <button bindtap='existLogin'>退出登录</button>
+  </view>
+</view>
